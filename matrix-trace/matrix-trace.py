@@ -6,9 +6,10 @@ def matrix_trace(A):
     """
     # Write code here
     trace_A = 0.0
-    d = len(A)
+    A = np.array(A)
+    d = A.shape[0]
     # A = np.ndarray(A)
     for id in range(0, d):
-        trace_A += A[id][id]
+        trace_A += A[id, id]
     return trace_A
     # pass
